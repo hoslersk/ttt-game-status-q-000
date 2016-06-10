@@ -52,8 +52,18 @@ def won?(board)
   end
 end
 #
-#def full?(board)
-#end
+def full?(board)
+  #board.each do |full|
+  #board.any? do |full|
+    if board.include?(" ") == false#(full == "X") || (full == "O")
+      return true
+    elsif board.include?(" ") == true
+      return false
+    else
+      return false
+    end
+  #end
+end
 #
 #def draw?(board)
 #end
